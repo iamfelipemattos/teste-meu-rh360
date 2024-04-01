@@ -1,0 +1,15 @@
+<div class="d-flex justify-content-center align-items-center">
+  <form [formGroup]="form" class="mr-3">
+    <input type="input" formControlName="task" />
+  </form>
+
+  <div>
+    <button
+      class="btn btn-primary"
+      [disabled]="form.invalid"
+      (click)="add()"
+    >
+      Adicionar
+    </button>
+  </div>
+</div>

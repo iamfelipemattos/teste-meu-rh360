@@ -1,0 +1,15 @@
+<div class="d-flex justify-content-around align-items-center mb-3" *ngFor="let task of tasks; let i = index">
+  <div>
+    <input type="checkbox" [(ngModel)]="task.completed" (change)="complete($event.target, task)" />
+  </div>
+
+  <div class="mid-item">
+    <p class="mb-0 pb-0" [ngClass]="{ completed: task.completed }">{{ task.description }}</p>
+  </div>
+
+  <div>
+    <button type="button" class="btn btn-danger" (click)="delete(task)">
+      Delete
+    </button>
+  </div>
+</div>

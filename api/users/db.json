@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": "8517",
+      "fullName": "Felipe Souza de Mattos",
+      "email": "felipe.mattosj@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "acceptTerms": true
+    }
+  ]
+}
